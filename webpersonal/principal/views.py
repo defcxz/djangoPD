@@ -2,13 +2,13 @@ from django.shortcuts import render, HttpResponse
 
 # Create your views here.
 def home(request):
-	return render(request, 'templates/home.html')
+	return render(request, 'principal/home.html')
 
 def about(request):
-	return render(request, 'templates/about.html')
+	return render(request, 'principal/about.html')
 
 def contacto(request):
-	return render(request, 'templates/contacto.html')
+	return render(request, 'principal/contacto.html')
 
 def portafolio(request):
-	return render(request, 'templates/portafolio.html')
+	return render(request, 'principal/portafolio.html')
