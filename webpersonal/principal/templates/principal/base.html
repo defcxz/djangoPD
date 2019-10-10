@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="CSS/estilos.css">
 	<title>Home</title>
 </head>
 <body>
-<h2>Menú</h2>
-<ul>
-	<li><a href='/'> Principal</a> </li>
-	<li><a href='/about'> Sobre mi</a> </li>
-	<li><a href='/contacto'>Contacto</a> </li>
-	<li><a href='/portafolio'>portafolio</a> </li>
-</ul>
-<H1>Página base</H1>
+	<h2>Menú</h2>
+	<ul>
+		<li><a href='/'> Principal</a> </li>
+		<li><a href='/about'> Sobre mi</a> </li>
+		<li><a href='/contacto'>Contacto</a> </li>
+		<li><a href='/portafolio'>portafolio</a> </li>
+	</ul>
+			
+			{% block content %}
+			<!-- Aqui va el contenido dinámico -->
+
+
+
+			{% endblock %}
+
 </body>
 </html>
