@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponse
+from .models import Proyecto
 
 # Create your views here.
 def home(request):
@@ -11,4 +12,6 @@ def contacto(request):
 	return render(request, 'principal/contacto.html')
 
 def portafolio(request):
-	return render(request, 'principal/portafolio.html')
+	lista = Proyecto.objects.all()
+	contexto = {'lista': lista}
+	return render(request, 'principal/portafolio.html', contexto)

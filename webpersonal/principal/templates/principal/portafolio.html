@@ -4,4 +4,11 @@
 
 	<h1>Portafolio! (cuando tenga uno)</h1>
 
+	{% for elemento in lista %}
+	
+		<h2> {{ elemento.nombre }} </h2>		
+		<h4> {{elemento.descripcion}} </h4>
+
+	{% endfor %}
+
 {% endblock %}
