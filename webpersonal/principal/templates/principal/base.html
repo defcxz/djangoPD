@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+	<link rel="stylesheet" type="text/css" href="CSS/estilos.css"/>
+
 	<title>Home</title>
 </head>
 <body>
-	<h2>Menú</h2>
-	<ul>
-		<li><a href='/'> Principal</a> </li>
-		<li><a href='/about'> Sobre mi</a> </li>
-		<li><a href='/contacto'>Contacto</a> </li>
-		<li><a href='/portafolio'>portafolio</a> </li>
-	</ul>
-			
+	<div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                DJANGO MG
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>    
+        <div class="nav-links">
+            <a href="/">Principal</a>
+            <a href="/about">Sobre mi</a>
+            <a href="/contacto">Contáctame!</a>
+            <a href="/portafolio">Portafolio</a>
+        </div>
+    </div>
+
 			{% block content %}
+
 			<!-- Aqui va el contenido dinámico -->
-
-
 
 			{% endblock %}
 

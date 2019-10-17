@@ -1,3 +1,55 @@
-html{
-	text-align: center;
+.nav {
+    
+    height: 50px;
+    width: 100%;
+    position: fixed;
+}
+
+.nav > .nav-header {
+    display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    color: #000;
+    padding: 10px 10px 10px 10px;
+    transition: all .3s;
+}
+
+.nav > .nav-header > .nav-title:hover{
+    cursor: pointer;
+    font-size: 30px;
+    transition: all .3s;
+}
+
+.nav > .nav-btn {
+    display: none;
+}
+
+.nav > .nav-links {
+    padding-right: 5%;
+    display: inline;
+    float: right;
+    font-size: 15px;
+}
+
+
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #000;
+    transition: all .3s;
+}
+
+.nav > .nav-links > a:hover {
+    padding: 13px 15px 13px 15px;
+    background-color: rgb(255, 186, 107);
+    transition: all .3s;
+}
+
+.nav > #nav-check {
+    display: none;
 }
